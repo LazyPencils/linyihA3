@@ -4,11 +4,12 @@
         <ul>
             <li *ngFor="let car of cars; let i=index">
             <button (click) = "getCar(i)">{{i+1}}. {{car.make}} {{car.model}}</button>
+            <div id="Car Details" *ngIf="showCars[i]">
+                <p>{{displayCar.make}}</p>
+            </div>
         </li>
         </ul>
     </div>
-    <div id="Car Details" *ngIf="showCars[i]">
-        <p>{{displayCar.make}}</p>
-    </div>
+    
 </section>
 

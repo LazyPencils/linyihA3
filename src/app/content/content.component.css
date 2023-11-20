@@ -1,0 +1,22 @@
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    align-items: center;
+}
+
+ li {
+    border: thin solid navy;
+    padding: 10px;
+    margin: 0px 10px 5px 10px;
+    list-style-type: none;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns for the divs */
+    grid-gap: 10px;
+    align-items: center;
+}
+li div {
+    border: thin solid navy;
+    background: bisque;
+}
